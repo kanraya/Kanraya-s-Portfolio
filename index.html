@@ -319,6 +319,17 @@
       transition: border-color .2s, color .2s;
     }
     .btn-dim:hover { border-color: var(--muted); color: var(--text); }
+    .btn-pdf {
+      background: transparent; border: 1px solid rgba(52,211,153,.5);
+      border-radius: 3px; color: var(--accent3);
+      padding: 8px 18px; font-size: 11px; font-family: var(--mono);
+      letter-spacing: .1em; cursor: pointer; text-transform: uppercase;
+      transition: background .2s, border-color .2s;
+      display: inline-flex; align-items: center; gap: 6px;
+      text-decoration: none;
+    }
+    .btn-pdf:hover { background: rgba(52,211,153,.08); border-color: var(--accent3); }
+    .btn-pdf.loading { opacity: .6; cursor: wait; }
 
     /* avatar */
     .avatar-wrap { display: flex; flex-direction: column; align-items: center; gap: 8px; }
@@ -580,6 +591,7 @@
         <div class="ctas">
           <a class="btn-holo" href="mailto:kanrayakerdkum@gmail.com">Contact Me → : kanrayakerdkum@gmail.com</a>
           <a class="btn-dim" href="tel:0924655997">092-4655997</a>
+          <a class="btn-pdf" href="https://drive.google.com/uc?export=download&id=16rBgG0DOWr4ZAReYGYzPwaTP5hsK7jwP" target="_blank">⬇ Download PDF</a>
         </div>
       </div>
       <div class="avatar-wrap">
