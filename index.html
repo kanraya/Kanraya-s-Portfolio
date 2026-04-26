@@ -323,7 +323,7 @@
     /* avatar */
     .avatar-wrap { display: flex; flex-direction: column; align-items: center; gap: 8px; }
     .avatar {
-      width: 100px; height: 100px; border-radius: 4px;
+      width: 200px; height: 200px; border-radius: 4px;
       background: #050e1a; border: 1px solid var(--border);
       display: flex; align-items: center; justify-content: center;
       font-size: 36px; position: relative; overflow: hidden;
@@ -870,7 +870,7 @@
 
         setTimeout(() => {
           // Phase B: brief hold, then BLAST — scale to fill entire screen
-          word.style.transition = 'transform .6s cubic-bezier(.4,0,1,1), opacity .35s ease .25s, text-shadow .4s ease';
+          word.style.transition = 'transform 1.4s cubic-bezier(.4,0,1,1), opacity .6s ease .4s, text-shadow .6s ease';
           word.style.transform  = 'scale(30)';
           word.style.opacity    = '0';
 
